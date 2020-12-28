@@ -18,9 +18,10 @@ Clustering” by Mai, Zhang, Pan and Deng.
 Installation
 ------------
 
-The [TensorClustering](#tensorclustering) package can be installed,
-directly from [GitHub](https://github.com/), using the
-[devtools](https://cran.r-project.org/web/packages/devtools/) library:
+The [TensorClustering](https://github.com/azuryee/TensorClustering)
+package can be installed, directly from [GitHub](https://github.com/),
+using the [devtools](https://cran.r-project.org/web/packages/devtools/)
+library:
 
 ``` r
 install.packages("devtools")
