@@ -34,10 +34,10 @@ initial = TRUE, vec_x = NULL)
 
 
 \value{
-  \item{pi}{Estimated cluster wight.}
+  \item{pi}{A vector of estimated prior probabilities for clusters.}
   \item{mu}{A list of estimated cluster means.}
   \item{sigma}{A list of estimated covariance matrices.}
-  \item{gamma}{A \code{n} by \code{K} matrix of estimated membership weights.}
+  \item{gamma}{A \code{n} by \code{nclass} matrix of estimated membership weights.}
   \item{y}{A vector of estimated labels.}
   \item{iter}{Number of iterations until convergence.}
   \item{df}{Average zero elements in beta over iterations.}

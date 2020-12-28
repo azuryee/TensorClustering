@@ -25,7 +25,7 @@ iter.max = 500, stop = 1e-3, trueY = NULL, print = FALSE)
 
 \value{
   \item{id}{A vector of estimated labels.}
-  \item{pi}{Estimated cluster wight.}
+  \item{pi}{A vector of estimated prior probabilities for clusters.}
   \item{eta}{A \code{n} by \code{K} matrix of estimated membership weights.}
   \item{Mu.est}{A list of estimated cluster means.}
   \item{SIG.est}{A list of estimated covariance matrices.}
