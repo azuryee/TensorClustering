@@ -30,7 +30,7 @@ iter.max = 500, stop = 0.001, trueY = NULL)
 
 \references{Deng, K. and Zhang, X. (2020) \emph{Tensor Envelope Mixture Model For Simultaneous Clustering and Multiway Dimension Reduction, Manuscript.}}
 
-\author{Kai Deng, Xin Zhang}
+\author{Kai Deng, Yuqing Pan, Xin Zhang and Qing Mai}
 
 
 \examples{

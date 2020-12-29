@@ -37,7 +37,7 @@ stop = 1e-3, trueY = NULL, print = FALSE)
 
 \references{Deng, K. and Zhang, X. (2020) \emph{Tensor Envelope Mixture Model For Simultaneous Clustering and Multiway Dimension Reduction, Manuscript.}}
 
-\author{Kai Deng, Xin Zhang}
+\author{Kai Deng, Yuqing Pan, Xin Zhang and Qing Mai}
 
 
 \examples{

@@ -1,3 +1,9 @@
+tinner = function(A,B){
+  s = sum(as.vector(A)*as.vector(B))
+  return(s)
+}
+
+
 cluster_err = function(K, idx, id_est) {
   # K is number of clusters
   # id_est is the estimate label
@@ -46,7 +52,7 @@ mu_err = function(Mu,mu_est,K,idx,id_est){
 
 
 mkronecker = function(X){
-  #X is a list of matrix to do kronecker product
+  #X is a list of matrices for kronecker product
 
   M = length(X)
   KronX = X[[M]]
@@ -63,7 +69,7 @@ mkronecker = function(X){
 
 logMixTenGau = function(Xm, pi, eta, Mu, SIG){
   #calculate observed loglikelihood
-  #Xm is observed tensor data
+  #Each column of Xm is a vectorized observed tensor data
   #pi is estimate weight
   #eta is estimate probability of Xi belong to class k
   #Mu is a list of estimate cluster mean, of length K
