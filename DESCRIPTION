@@ -2,10 +2,10 @@ Package: TensorClustering
 Type: Package
 Title: Model-based tensor clustering
 Version: 1.0.1
-Author: Kai Deng <kd18h@stat.fsu.edu>,
-	      Yuqing Pan <yuqing.pan@stat.fsu.edu>,
-	      Xin Zhang <henry@stat.fsu.edu>,
-	      Qing Mai <mai@stat.fsu.edu>
+Author:Kai Deng <kd18h@stat.fsu.edu>,
+Yuqing Pan <yuqing.pan@stat.fsu.edu>,
+Xin Zhang <henry@stat.fsu.edu>,
+Qing Mai <mai@stat.fsu.edu>
 Maintainer: Kai Deng <kd18h@stat.fsu.edu>
 Description: This is an R package to implement model-based tensor clustering methods including Tensor Envelope Mixture Model (TEMM), Doubly-Enhanced EM (DEEM) algorithm and Tensor Gaussian Mixture Model (TGMM).
 License: MIT + file LICENSE
