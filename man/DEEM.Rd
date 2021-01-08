@@ -33,6 +33,8 @@ initial = TRUE, vec_x = NULL)
 }
 
 
+\details{The \code{\link{DEEM}} function implements the Doubly-Enhanced EM algorithm (DEEM) for tensor clustering. In the enhanced E-step, \code{\link{DEEM}} imposes sparsity directly on the optimal clustering rule as a flexible alternative to popular low-rank assumptions on tensor coefficients. In the enhanced M-step, \code{\link{DEEM}} employs a new estimator for the tensor correlation structure, which facilitates both the computation and the theoretical studies.}
+
 \value{
   \item{pi}{A vector of estimated prior probabilities for clusters.}
   \item{mu}{A list of estimated cluster means.}
@@ -44,11 +46,11 @@ initial = TRUE, vec_x = NULL)
   \item{beta}{A matrix of vectorized \code{B_k}.}
 }
 
-\references{Mai, Q., Zhang, X., Pan, Y. and Deng, K. (2020) \emph{A Doubly-Enhanced EM Algorithm for Model-Based Tensor Clustering, Manuscript.}}
+\references{Mai, Q., Zhang, X., Pan, Y. and Deng, K. (2020). A Doubly-Enhanced EM Algorithm for Model-Based Tensor Clustering. \emph{Manuscript.}}
 
 \author{Kai Deng, Yuqing Pan, Xin Zhang and Qing Mai}
 
-
+\seealso{\code{\link{tune_lamb}}, \code{\link{tune_K}}}
 
 \examples{
 dimen = c(5,5,5)

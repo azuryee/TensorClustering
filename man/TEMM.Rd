@@ -22,6 +22,7 @@ stop = 1e-3, trueY = NULL, print = FALSE)
   and clustering error (\code{\%}) in each iteration.}
 }
 
+\details{The \code{\link{TEMM}} function fits the Tensor Envelope Mixture Model (TEMM) through a subspace-regularized EM algorithm. The envelope subspace is iteratively estimated in the regularized M-step.}
 
 \value{
   \item{id}{A vector of estimated labels.}
@@ -35,10 +36,13 @@ stop = 1e-3, trueY = NULL, print = FALSE)
   \item{PGamma.est}{A list of envelope projection matrices.}
 }
 
-\references{Deng, K. and Zhang, X. (2020) \emph{Tensor Envelope Mixture Model For Simultaneous Clustering and Multiway Dimension Reduction, Manuscript.}}
+\references{
+Deng, K. and Zhang, X. (2020). Tensor Envelope Mixture Model For Simultaneous Clustering and Multiway Dimension Reduction. \emph{Manuscript}.
+}
 
 \author{Kai Deng, Yuqing Pan, Xin Zhang and Qing Mai}
 
+\seealso{\code{\link{TGMM}}, \code{\link{tune_u_sep}}, \code{\link{tune_u_joint}}}
 
 \examples{
   A = array(c(rep(1,20),rep(2,20))+rnorm(40),dim=c(2,2,10))

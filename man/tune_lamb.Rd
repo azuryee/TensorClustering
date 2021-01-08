@@ -18,6 +18,13 @@ tune_lamb(X, K, seqlamb, initial = TRUE, vec_x = NULL)
 }
 
 
+\details{
+The \code{\link{tune_lamb}} function adopts a BIC-type criterion to select the tuning parameter \eqn{\lambda} in the enhanced E-step. Let \eqn{\widehat{\bm{\theta}}^{\lambda}} be the output of \code{\link{DEEM}} with the tuning parameter fixed at \eqn{\lambda}, \code{\link{tune_lamb}} looks for the value of \eqn{\lambda} that minimizes
+\deqn{\mathrm{BIC}(\lambda)=-2\sum_{i=1}^n\log(\sum_{k=1}^K\widehat{\pi}^{\lambda}_kf_k(\mathbf{X}_i;\widehat{\bm{\theta}}_k^{\lambda}))+\log(n)\cdot |\widehat{\mathcal{D}}^{\lambda}|,}
+where \eqn{\widehat{\mathcal{D}}^{\lambda}=\{(k, {\mathcal{J}}): \widehat b_{k,{\mathcal{J}}}^{\lambda} \neq 0 \}} is the set of nonzero elements in \eqn{\widehat{\bm{B}}_2^{\lambda},\ldots,\widehat{\bm{B}}_K^{\lambda}}. The \code{\link{tune_lamb}} function intrinsically selects the initial point and return the optimal estimated labels.
+}
+
+
 \value{
   \item{opt_lamb}{Tuned \code{lambda} that leads to optimal BIC.}
   \item{opt_bic}{BIC value.}
@@ -25,11 +32,11 @@ tune_lamb(X, K, seqlamb, initial = TRUE, vec_x = NULL)
 }
 
 
-\references{Mai, Q., Zhang, X., Pan, Y. and Deng, K. (2020) \emph{A Doubly-Enhanced EM Algorithm for Model-Based Tensor Clustering, Manuscript.}}
+\references{Mai, Q., Zhang, X., Pan, Y. and Deng, K. (2020). A Doubly-Enhanced EM Algorithm for Model-Based Tensor Clustering. \emph{Manuscript.}}
 
 \author{Kai Deng, Yuqing Pan, Xin Zhang and Qing Mai}
 
-
+\seealso{\code{\link{DEEM}}, \code{\link{tune_K}}}
 
 \examples{
 dimen = c(5,5,5)

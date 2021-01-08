@@ -19,6 +19,11 @@
   \item{vec_x}{Vectorized tensor data. Default value is \code{NULL}}
 }
 
+\details{
+The \code{\link{tune_K}} function runs \code{\link{tune_lamb}} function \code{length(seqK)} times to choose the tuning parameter \eqn{\lambda} and number of clusters \eqn{K} simultaneously. Let \eqn{\widehat{\bm{\theta}}^{\{\lambda,K\}}} be the output of \code{\link{DEEM}} with the tuning parameter and number of clusters fixed at \eqn{\lambda} and \eqn{K} respectively, \code{\link{tune_K}} looks for the values of \eqn{\lambda} and \eqn{K} that minimizes
+\deqn{\mathrm{BIC}(\lambda,K)=-2\sum_{i=1}^n\log(\sum_{k=1}^K\widehat{\pi}^{\{\lambda,K\}}_kf_k(\mathbf{X}_i;\widehat{\bm{\theta}}_k^{\{\lambda,K\}}))+\log(n)\cdot |\widehat{\mathcal{D}}^{\{\lambda,K\}}|,}
+where \eqn{\widehat{\mathcal{D}}^{\{\lambda,K\}}=\{(k, {\mathcal{J}}): \widehat b_{k,{\mathcal{J}}}^{\lambda} \neq 0 \}} is the set of nonzero elements in \eqn{\widehat{\bm{B}}_2^{\{\lambda,K\}},\ldots,\widehat{\bm{B}}_K^{\{\lambda,K\}}}. The \code{\link{tune_K}} function intrinsically selects the initial point and return the optimal estimated labels.
+}
 
 \value{
   \item{opt_K}{Selected number of clusters that leads to optimal BIC.}
@@ -27,11 +32,11 @@
 }
 
 
-\references{Mai, Q., Zhang, X., Pan, Y. and Deng, K. (2020) \emph{A Doubly-Enhanced EM Algorithm for Model-Based Tensor Clustering, Manuscript.}}
+\references{Mai, Q., Zhang, X., Pan, Y. and Deng, K. (2020). A Doubly-Enhanced EM Algorithm for Model-Based Tensor Clustering. \emph{Manuscript.}}
 
 \author{Kai Deng, Yuqing Pan, Xin Zhang and Qing Mai}
 
-
+\seealso{\code{\link{DEEM}}, \code{\link{tune_lamb}}}
 
 \examples{
 dimen = c(5,5,5)

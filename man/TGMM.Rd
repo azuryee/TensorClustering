@@ -22,6 +22,7 @@ iter.max = 500, stop = 1e-3, trueY = NULL, print = FALSE)
   and clustering error (\code{\%}) in each iteration.}
 }
 
+\details{The \code{\link{TGMM}} function fits the Tensor Gaussian Mixture Model (TGMM) through the classical EM algorithm.}
 
 \value{
   \item{id}{A vector of estimated labels.}
@@ -31,10 +32,15 @@ iter.max = 500, stop = 1e-3, trueY = NULL, print = FALSE)
   \item{SIG.est}{A list of estimated covariance matrices.}
 }
 
-\references{Deng, K. and Zhang, X. (2020) \emph{Tensor Envelope Mixture Model For Simultaneous Clustering and Multiway Dimension Reduction, Manuscript.}}
+\references{
+Deng, K. and Zhang, X. (2020). Tensor Envelope Mixture Model For Simultaneous Clustering and Multiway Dimension Reduction. \emph{Manuscript}.
+
+Tait, P. A. and McNicholas, P. D. (2019). Clustering higher order data: Finite mixtures of multidimensional arrays. \emph{arXiv:1907.08566}.
+}
 
 \author{Kai Deng, Yuqing Pan, Xin Zhang and Qing Mai}
 
+\seealso{\code{\link{TEMM}}}
 
 \examples{
   A = array(c(rep(1,20),rep(2,20))+rnorm(40),dim=c(2,2,10))
