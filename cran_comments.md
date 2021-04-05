@@ -1,13 +1,18 @@
+First submission
+----------------
+
+This is the first version of the submitted package.
+
 Test environments
 -----------------
 
--   local OS X install, R 4.0.3
+-   local OS X install, R 4.0.5
 -   win-builder (release)
 
 R CMD check results
 -------------------
 
--   local OS X install, R 4.0.3:
+-   local OS X install, R 4.0.5:
 
 There were no ERRORs or WARNINGs or NOTES.
 
