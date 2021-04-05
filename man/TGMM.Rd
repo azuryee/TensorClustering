@@ -22,7 +22,13 @@ iter.max = 500, stop = 1e-3, trueY = NULL, print = FALSE)
   and clustering error (\code{\%}) in each iteration.}
 }
 
-\details{The \code{\link{TGMM}} function fits the Tensor Gaussian Mixture Model (TGMM) through the classical EM algorithm.}
+\details{The \code{\link{TGMM}} function fits the Tensor Gaussian Mixture Model (TGMM) through the classical EM algorithm. TGMM assumes the following tensor normal mixture distribution of M-way tensor data \eqn{\mathbf{X}}:
+\deqn{
+\mathbf{X}\sim\sum_{k=1}^K\pi_k \mathrm{TN}(\bm{\mu}_k,\mathcal{M}_k),\quad i=1,\dots,n,
+}
+where \eqn{0<\pi_k<1} is the prior probability for \eqn{\mathbf{X}} to be in the \eqn{k}-th cluster such that \eqn{\sum_{k=1}^{K}\pi_k=1}, \eqn{\bm{\mu}_k} is the mean of the \eqn{k}-th cluster, \eqn{\mathcal{M}_k \equiv \{\bm{\Sigma}_{km}, m=1,\dots,M\}} is the set of covariances of the \eqn{k}-th cluster. If \eqn{\mathcal{M}_k}'s are the same for \eqn{k=1,\dots,K}, call \code{\link{TGMM}} with argument \code{shape="shared"}.
+
+}
 
 \value{
   \item{id}{A vector of estimated labels.}

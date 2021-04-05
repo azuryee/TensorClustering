@@ -32,7 +32,7 @@ where \eqn{\widehat{\mathcal{D}}^{\lambda}=\{(k, {\mathcal{J}}): \widehat b_{k,{
 }
 
 
-\references{Mai, Q., Zhang, X., Pan, Y. and Deng, K. (2020). A Doubly-Enhanced EM Algorithm for Model-Based Tensor Clustering. \emph{Manuscript.}}
+\references{Mai, Q., Zhang, X., Pan, Y. and Deng, K. (2021). A Doubly-Enhanced EM Algorithm for Model-Based Tensor Clustering. \emph{Journal of the American Statistical Association}.}
 
 \author{Kai Deng, Yuqing Pan, Xin Zhang and Qing Mai}
 

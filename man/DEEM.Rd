@@ -33,7 +33,19 @@ initial = TRUE, vec_x = NULL)
 }
 
 
-\details{The \code{\link{DEEM}} function implements the Doubly-Enhanced EM algorithm (DEEM) for tensor clustering. In the enhanced E-step, \code{\link{DEEM}} imposes sparsity directly on the optimal clustering rule as a flexible alternative to popular low-rank assumptions on tensor coefficients. In the enhanced M-step, \code{\link{DEEM}} employs a new estimator for the tensor correlation structure, which facilitates both the computation and the theoretical studies.}
+\details{The \code{\link{DEEM}} function implements the Doubly-Enhanced EM algorithm (DEEM) for tensor clustering. The observations \eqn{\mathbf{X}_i} are assumed to be following the tensor normal mixture model (TNMM) with common covariances across different clusters:
+\deqn{
+\mathbf{X}_i\sim\sum_{k=1}^K\pi_k \mathrm{TN}(\bm{\mu}_k;\bm{\Sigma}_1,\ldots,\bm{\Sigma}_M),\quad i=1,\dots,n,
+}
+where \eqn{0<\pi_k<1} is the prior probability for \eqn{\mathbf{X}} to be in the \eqn{k}-th cluster such that \eqn{\sum_{k=1}^{K}\pi_k=1}, \eqn{\bm{\mu}_k} is the cluster mean of the \eqn{k}-th cluster and \eqn{\bm{\Sigma}_1,\ldots,\bm{\Sigma}_M)} are the common covariances across different clusters. Under the TNMM framework, the optimal clustering rule can be showed as
+\deqn{
+\widehat{Y}^{opt}=\arg\max_k\{\log\pi_k+\langle\mathbf{X}-(\bm{\mu}_1+\bm{\mu}_k)/2,\mathbf{B}_k\rangle\},
+}
+where \eqn{\mathbf{B}_k=[\![\bm{\mu}_k-\bm{\mu}_1;\bm{\Sigma}_1^{-1},\ldots,\bm{\Sigma}_M^{-1}]\!]}. In the enhanced E-step, \code{\link{DEEM}} imposes sparsity directly on the optimal clustering rule as a flexible alternative to popular low-rank assumptions on tensor coefficients \eqn{\mathbf{B}_k} as 
+\deqn{
+\min_{\mathbf{B}_2,\dots,\mathbf{B}_K}\bigg[\sum_{k=2}^K(\langle\mathbf{B}_k,[\![\mathbf{B}_k,\widehat{\bm{\Sigma}}_1^{(t)},\ldots,\widehat{\bm{\Sigma}}_M^{(t)}]\!]\rangle-2\langle\mathbf{B}_k,\widehat{\bm{\mu}}_k^{(t)}-\widehat{\bm{\mu}}_1^{(t)}\rangle) +\lambda^{(t+1)}\sum_{\mathcal{J}}\sqrt{\sum_{k=2}^Kb_{k,\mathcal{J}}^2}\bigg],
+}
+where \eqn{\lambda^{(t+1)}} is a tuning parameter. In the enhanced M-step, \code{\link{DEEM}} employs a new estimator for the tensor correlation structure, which facilitates both the computation and the theoretical studies.}
 
 \value{
   \item{pi}{A vector of estimated prior probabilities for clusters.}
@@ -46,7 +58,7 @@ initial = TRUE, vec_x = NULL)
   \item{beta}{A matrix of vectorized \code{B_k}.}
 }
 
-\references{Mai, Q., Zhang, X., Pan, Y. and Deng, K. (2020). A Doubly-Enhanced EM Algorithm for Model-Based Tensor Clustering. \emph{Manuscript.}}
+\references{Mai, Q., Zhang, X., Pan, Y. and Deng, K. (2021). A Doubly-Enhanced EM Algorithm for Model-Based Tensor Clustering. \emph{Journal of the American Statistical Association}.}
 
 \author{Kai Deng, Yuqing Pan, Xin Zhang and Qing Mai}
 
