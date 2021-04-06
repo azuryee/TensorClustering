@@ -1,5 +1,10 @@
-## First submission
-This is the first version of the submitted package.
+## Resubmission
+This is a resubmission. In this version I have:
+
+*Removed the invalid URLs in README.md.
+
+*Rewritten the description field and added references for methods.
+
 
 ## Test environments
 * local OS X install, R 4.0.5

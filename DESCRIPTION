@@ -7,7 +7,7 @@ Author: Kai Deng <kd18h@stat.fsu.edu>,
         Xin Zhang <henry@stat.fsu.edu>,
         Qing Mai <mai@stat.fsu.edu>
 Maintainer: Kai Deng <kd18h@stat.fsu.edu>
-Description: This is an R package to implement model-based tensor clustering methods including Tensor Envelope Mixture Model (TEMM), Doubly-Enhanced EM (DEEM) algorithm and Tensor Gaussian Mixture Model (TGMM).
+Description: Performs model-based tensor clustering methods including Tensor Gaussian Mixture Model (TGMM) and Tensor Envelope Mixture Model (TEMM) by Deng and Zhang (2021, tentatively accepted by Biometrics), Doubly-Enhanced EM (DEEM) algorithm by Mai, Zhang, Pan and Deng (2021) <arXiv:2012.10032>. 
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: false
