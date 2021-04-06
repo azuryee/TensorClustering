@@ -7,25 +7,29 @@ Test environments
 -----------------
 
 -   local OS X install, R 4.0.5
--   win-builder (release)
+-   win-builder (devel and release)
 
 R CMD check results
 -------------------
-
--   local OS X install, R 4.0.5:
-
-There were no ERRORs or WARNINGs or NOTES.
-
--   win-builder (release):
 
 There were no ERRORs or WARNINGs
 
 There were two NOTES:
 
-\*\* running examples for arch ‘i386’ … \[53s\] NOTE
+\*\* checking CRAN incoming feasibility … NOTE
+
+Maintainer: ‘Kai Deng
+<a href="mailto:kd18h@stat.fsu.edu" class="email">kd18h@stat.fsu.edu</a>’
+
+New submission
 
 Examples with CPU (user + system) or elapsed time &gt; 10s
 
-\*\* running examples for arch ‘x64’ … \[61s\] NOTE
+\*\* checking examples … NOTE
 
-Examples with CPU (user + system) or elapsed time &gt; 10s
+Examples with CPU (user + system) or elapsed time &gt; 5s
+
+           user system elapsed
+           
+
+tune\_K 16.553 0.007 16.561
