@@ -23,13 +23,10 @@ Maintainer: ‘Kai Deng
 
 New submission
 
-Examples with CPU (user + system) or elapsed time &gt; 10s
-
 \*\* checking examples … NOTE
 
 Examples with CPU (user + system) or elapsed time &gt; 5s
 
            user system elapsed
-           
 
 tune\_K 16.553 0.007 16.561
