@@ -9,13 +9,8 @@ This is the first version of the submitted package.
 
 There were no ERRORs or WARNINGs.
 
-There were two NOTES:
+There was one NOTE:
 
 ** checking CRAN incoming feasibility ... NOTE
   
   New submission
-
-** checking examples ... NOTE
-
-  Examples with CPU (user + system) or elapsed time > 5s
-

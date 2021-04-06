@@ -39,6 +39,7 @@ where \eqn{\widehat{\mathcal{D}}^{\{\lambda,K\}}=\{(k, {\mathcal{J}}): \widehat 
 \seealso{\code{\link{DEEM}}, \code{\link{tune_lamb}}}
 
 \examples{
+\dontrun{
 dimen = c(5,5,5)
 nvars = prod(dimen)
 K = 2
@@ -63,4 +64,5 @@ for (i in 1:n){
 }
 
 mytune = tune_K(X, seqK=2:4, seqlamb=seq(0.01,0.1,by=0.01))
+}
 }
