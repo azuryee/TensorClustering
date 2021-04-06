@@ -11,14 +11,14 @@ stop = 1e-3, trueY = NULL, print = FALSE)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{Xn}{The tensor for clustering, should be array tpye, the last dimension is the sample size \code{n}.}
+  \item{Xn}{The tensor for clustering, should be array type, the last dimension is the sample size \code{n}.}
   \item{u}{A vector of envelope dimension}
-  \item{K}{Nuber of clusters, greater than or equal to \code{2}.}
-  \item{initial}{Initialization methed for the regularized EM algorithm. Default value is "kmeans".}
+  \item{K}{Number of clusters, greater than or equal to \code{2}.}
+  \item{initial}{Initialization meth0d for the regularized EM algorithm. Default value is "kmeans".}
   \item{iter.max}{Maximum number of iterations. Default value is \code{500}.}
   \item{stop}{Convergence threshold of relative change in cluster means. Default value is \code{1e-3}.}
   \item{trueY}{A vector of true cluster labels of each observation. Default value is NULL.}
-  \item{print}{Whether to print information including current iteration number, ralative change in cluster means 
+  \item{print}{Whether to print information including current iteration number, relative change in cluster means 
   and clustering error (\code{\%}) in each iteration.}
 }
 
@@ -30,7 +30,7 @@ where \eqn{\bm{\alpha}_{k}\in R^{u_{1}\times\cdots\times u_{M}}} and \eqn{\bm{\O
 \deqn{
 \widehat{\eta}_{ik}^{(s)}=\frac{\widehat{\pi}_{k}^{(s-1)}f_{k}(\mathbf{X}_i;\widehat{\bm{\theta}}^{(s-1)})}{\sum_{k=1}^{K}\widehat{\pi}_{k}^{(s-1)}f_{k}(\mathbf{X}_i;\widehat{\bm{\theta}}^{(s-1)})},
 }
-where \eqn{f_k} denotes the conditional probability density function of \eqn{\mathbf{X}_i} within the \eqn{k}-th cluster. In the subspace-regularized M-step, the envelope subspace is iteratively estimated through a Grassmann manifold optimization that minizie the following log-likelihood-based objective function:
+where \eqn{f_k} denotes the conditional probability density function of \eqn{\mathbf{X}_i} within the \eqn{k}-th cluster. In the subspace-regularized M-step, the envelope subspace is iteratively estimated through a Grassmann manifold optimization that minimize the following log-likelihood-based objective function:
 \deqn{
 G_m^{(s)}(\bm{\Gamma}_m) = \log|\bm{\Gamma}_m^T \mathbf{M}_m^{(s)} \bm{\Gamma}_m|+\log|\bm{\Gamma}_m^T (\mathbf{N}_m^{(s)})^{-1} \bm{\Gamma}_m|,
 }

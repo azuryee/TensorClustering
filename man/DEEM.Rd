@@ -19,16 +19,16 @@ initial = TRUE, vec_x = NULL)
 
   \item{dfmax}{The maximum number of selected variables in the model. Default is the number of observations \code{n}.}
 
-  \item{pmax}{The maximum number of potential selected variables during iteration. In middle step, the algorithm can select at most \code{pmax} variables and then shrink part of them such that the nubmer of final selected variables is less than \code{dfmax}.}
+  \item{pmax}{The maximum number of potential selected variables during iteration. In middle step, the algorithm can select at most \code{pmax} variables and then shrink part of them such that the number of final selected variables is less than \code{dfmax}.}
 
-  \item{pf}{Weight of lasso penalty. Default is a vector of value \code{1} and length \code{p}, representing L1 penalty of length \eqn{p}{p}. Can be mofidied to use adaptive lasso penalty.}
+  \item{pf}{Weight of lasso penalty. Default is a vector of value \code{1} and length \code{p}, representing L1 penalty of length \eqn{p}{p}. Can be modified to use adaptive lasso penalty.}
 
   \item{eps}{Convergence threshold for coordinate descent difference between iterations. Default value is \code{1e-04}.}
   \item{maxit}{Maximum iteration times for coordinate descent for all lambda. Default value is \code{1e+05}.}
   \item{sml}{Threshold for ratio of loss function change after each iteration to old loss function value. Default value is \code{1e-06}.}
   \item{verbose}{Indicates whether print out lambda during iteration or not. Default value is \code{FALSE}.}
   \item{ceps}{Convergence threshold for cluster mean difference between iterations. Default value is \code{1}.}
-  \item{initial}{Whether to nitialize algorithm with K-means clustering. Default value is \code{TRUE}.}
+  \item{initial}{Whether to initialize algorithm with K-means clustering. Default value is \code{TRUE}.}
   \item{vec_x}{Vectorized tensor data. Default value is \code{NULL}}
 }
 

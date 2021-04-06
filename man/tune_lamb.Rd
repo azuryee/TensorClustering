@@ -13,7 +13,7 @@ tune_lamb(X, K, seqlamb, initial = TRUE, vec_x = NULL)
 
   \item{seqlamb}{A sequence of user-specified \code{lambda} values. \code{lambda} is the weight of L1 penalty and a smaller \code{lambda} allows more variables to be nonzero}
 
-  \item{initial}{Whether to nitialize algorithm with K-means clustering. Default value is \code{TRUE}.}
+  \item{initial}{Whether to initialize algorithm with K-means clustering. Default value is \code{TRUE}.}
   \item{vec_x}{Vectorized tensor data. Default value is \code{NULL}}
 }
 
