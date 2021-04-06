@@ -27,6 +27,6 @@ New submission
 
 Examples with CPU (user + system) or elapsed time &gt; 5s
 
-           user system elapsed
+          user system elapsed
 
 tune\_K 16.553 0.007 16.561
