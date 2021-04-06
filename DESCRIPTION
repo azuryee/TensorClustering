@@ -1,6 +1,6 @@
 Package: TensorClustering
 Type: Package
-Title: Model-based tensor clustering
+Title: Model-Based Tensor Clustering
 Version: 1.0.1
 Author: Kai Deng <kd18h@stat.fsu.edu>,
         Yuqing Pan <yuqing.pan@stat.fsu.edu>,
