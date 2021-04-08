@@ -39,7 +39,7 @@ where \eqn{\widehat{\mathcal{D}}^{\lambda}=\{(k, {\mathcal{J}}): \widehat b_{k,{
 \seealso{\code{\link{DEEM}}, \code{\link{tune_K}}}
 
 \examples{
-\dontrun{
+\donttest{
 dimen = c(5,5,5)
 nvars = prod(dimen)
 K = 2

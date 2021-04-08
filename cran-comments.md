@@ -1,9 +1,9 @@
 ## Resubmission
 This is a resubmission. In this version I have:
 
-*Removed the invalid URLs in README.md.
+*used the Authors@R field to declare authors and maintainer.
 
-*Rewritten the description field and added references for methods.
+*Replaced \dontrun with \donttest for examples that are not executable in < 5 sec.
 
 
 ## Test environments

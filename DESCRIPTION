@@ -2,11 +2,10 @@ Package: TensorClustering
 Type: Package
 Title: Model-Based Tensor Clustering
 Version: 1.0.1
-Author: Kai Deng <kd18h@stat.fsu.edu>,
-        Yuqing Pan <yuqing.pan@stat.fsu.edu>,
-        Xin Zhang <henry@stat.fsu.edu>,
-        Qing Mai <mai@stat.fsu.edu>
-Maintainer: Kai Deng <kd18h@stat.fsu.edu>
+Authors@R: c(person("Kai","Deng", email="kd18h@stat.fsu.edu", role=c("aut","cre")),
+    person("Yuqing","Pan", email="yuqing.pan@stat.fsu.edu", role="aut"),
+    person("Xin","Zhang", email="henry@stat.fsu.edu", role="aut"),
+    person("Qing","Mai", email="mai@stat.fsu.edu", role="aut"))
 Description: Performs model-based tensor clustering methods including Tensor Gaussian Mixture Model (TGMM) and Tensor Envelope Mixture Model (TEMM) by Deng and Zhang (2021, tentatively accepted by Biometrics), Doubly-Enhanced EM (DEEM) algorithm by Mai, Zhang, Pan and Deng (2021) <arXiv:2012.10032>. 
 License: MIT + file LICENSE
 Encoding: UTF-8
