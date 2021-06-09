@@ -1,9 +1,7 @@
 ## Resubmission
-This is a resubmission. In this version I have:
+This is a resubmission. The previous version is archived due to dependent packages 'rTensor' and 'TRES' were archived. In addition, in this version I have:
 
-*used the Authors@R field to declare authors and maintainer.
-
-*Replaced \dontrun with \donttest for examples that are not executable in < 5 sec.
+*Changed the descriptions of implemented methods by adding DOIs since the two papers proposed these methods were justed accepted for publication.
 
 
 ## Test environments
